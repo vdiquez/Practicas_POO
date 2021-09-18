@@ -1,4 +1,4 @@
-package src.poo;
+package src.poo.principal;
 
 public class Person {
     public String name;
