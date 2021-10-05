@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class MainClass {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         Item seaItem = new Item();
         Item techItem = new Item("Televisor");
         Item techItem2 = new Item("Televisor", 1600.0, new Date(2040 - 1900, 3, 2));
@@ -35,7 +35,15 @@ public class MainClass {
 
         techItem2.price = 1700.0;
 
-        Person person2 = new Person();
+        Person person2 = new Person();*/
+
+        Animal perrito = new Animal();
+        Animal perrito2 = new Animal();
+        perrito.name = "firulais";
+        perrito2.name = "firulais";
+        System.out.println(perrito.hashCode());
+        System.out.println(perrito2.hashCode());
+        System.out.println(perrito.equals(perrito2));
 
     }
 }
