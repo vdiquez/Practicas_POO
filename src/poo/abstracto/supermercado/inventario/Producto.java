@@ -9,7 +9,7 @@ public abstract class Producto {
         this.precioLista = precioLista;
     }
 
-    public abstract Double obtenerPrecio();
+    public abstract Double obtenerPrecioConDescuento();
 
     @Override
     public String toString() {
