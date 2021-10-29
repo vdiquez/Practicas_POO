@@ -16,7 +16,10 @@ public class AppCompany {
         Employee employee3 = new Employee("Marta", "1987689", (byte) 21);
         Employee employee4 = new Employee("Pablo", "23565323", (byte) 43);
         Employee employee5 = new Employee("Cristina", "87678763", (byte) 34);
-        Employee employee6 = new Employee("Jose", "87678763", (byte) 72);
+        Employee employee6 = new Employee();
+        employee6.setNombre("Jose");
+        employee6.setDni("87678763");
+        employee6.setEdad((byte) 72);
 
         ArrayList<Employee> empleados = new ArrayList<>();
         empleados.add(employee1);
@@ -36,7 +39,7 @@ public class AppCompany {
         System.out.println("**Cantidad de empleados que tiene la empresa: " + empleados.size());
 
         ArrayList empleadosMenores30 = getFromEmployeesLessThanThirty(empleados);
-        System.out.println("\n*****Listado de Empleados Menores de 30******\n" + empleadosMenores30);
+        System.out.println("\n*****Listado de Empleados Menores de 30******");
         reportEmployeeData(empleadosMenores30);
         System.out.println("**Cantidad de empleados menores de 30: " + empleadosMenores30.size());
 
@@ -54,9 +57,12 @@ public class AppCompany {
     }
 
     public static void reportEmployeeData(ArrayList<Employee> employees) {
+        //int cantidadEmpleados = 0;
         for (Employee employee: employees) {
             System.out.println(employee);
+            //cantidadEmpleados++;
         }
+        //System.out.println("La cantidad de empleados de la empresa es: " + cantidadEmpleados);
     }
 
     public static ArrayList getFromEmployeesLessThanThirty(ArrayList<Employee> employees) {
